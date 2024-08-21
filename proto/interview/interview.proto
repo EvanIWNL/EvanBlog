@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package interview;
+
+option go_package = "./cd";
+
+service Interview {
+  rpc GetSchedule (GetScheduleRequest) returns (ScheduleRecord);
+}
+
+message ScheduleRecord {
+  int64 id = 1; // ID
+  string companyName = 2; // 公司名称
+  string approveTime = 3; // 投递时间
+  string post = 4; // 岗位
+  string firstInterview = 5; // 一面
+  string secondInterview = 6; // 二面
+  string thirdInterview = 7; // 三面
+  string extraInterview = 8; // 更多面试
+  string exam = 9; // 笔试
+  string updateTime = 10; // 更新时间
+  string createTime = 11; // 创建时间
+}
+
+message GetScheduleRequest {
+  string message = 1;
+}
