@@ -1,4 +1,4 @@
-module interview
+module github.com/EvanIWNL/EvanBlog/proto/interview
 
 go 1.22.4
 

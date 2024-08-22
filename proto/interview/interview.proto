@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package interview;
+package evanBlog.interview;
 
-option go_package = "./cd";
+option go_package = "github.com/EvanIWNL/EvanBlog/proto/interview";
 
 service Interview {
   rpc GetSchedule (GetScheduleRequest) returns (ScheduleRecord);

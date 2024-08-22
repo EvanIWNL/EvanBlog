@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v3.19.5
-// source: interview.proto
+// source: interviewSchedule.proto
 
 package __
 
@@ -19,7 +19,7 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	Interview_GetSchedule_FullMethodName = "/interview.Interview/GetSchedule"
+	Interview_GetSchedule_FullMethodName = "/interviewSchedule.Interview/GetSchedule"
 )
 
 // InterviewClient is the client API for Interview service.
@@ -108,7 +108,7 @@ func _Interview_GetSchedule_Handler(srv interface{}, ctx context.Context, dec fu
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var Interview_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "interview.Interview",
+	ServiceName: "interviewSchedule.Interview",
 	HandlerType: (*InterviewServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -117,5 +117,5 @@ var Interview_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "interview.proto",
+	Metadata: "interviewSchedule.proto",
 }

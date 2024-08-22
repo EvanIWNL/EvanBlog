@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.27.1
 // 	protoc        v3.19.5
-// source: interview.proto
+// source: interviewSchedule.proto
 
 package __
 
@@ -248,12 +248,12 @@ func file_interview_proto_rawDescGZIP() []byte {
 
 var file_interview_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_interview_proto_goTypes = []interface{}{
-	(*ScheduleRecord)(nil),     // 0: interview.ScheduleRecord
-	(*GetScheduleRequest)(nil), // 1: interview.GetScheduleRequest
+	(*ScheduleRecord)(nil),     // 0: interviewSchedule.ScheduleRecord
+	(*GetScheduleRequest)(nil), // 1: interviewSchedule.GetScheduleRequest
 }
 var file_interview_proto_depIdxs = []int32{
-	1, // 0: interview.Interview.GetSchedule:input_type -> interview.GetScheduleRequest
-	0, // 1: interview.Interview.GetSchedule:output_type -> interview.ScheduleRecord
+	1, // 0: interviewSchedule.Interview.GetSchedule:input_type -> interviewSchedule.GetScheduleRequest
+	0, // 1: interviewSchedule.Interview.GetSchedule:output_type -> interviewSchedule.ScheduleRecord
 	1, // [1:2] is the sub-list for method output_type
 	0, // [0:1] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
